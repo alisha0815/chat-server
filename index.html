@@ -36,13 +36,15 @@
         </ul>
         <div class="setting__icon"><i class="fas fa-cog"></i></div>
       </nav>
+
       <!-- contact list -->
       <div class="contact__list">
         <!-- search bar -->
         <div class="search__bar">
-          <i class="fa fa-search"></i>
           <input class="search__area" type="text" placeholder="Search..." />
+          <i class="serach__icon fa fa-search"></i>
         </div>
+
         <!-- contact list items -->
         <div class="contact__list__items">
           <div class="contact__list__card">
@@ -67,12 +69,22 @@
           </div>
         </div>
       </div>
+
       <!-- chat box -->
       <div class="chat-box_container">
         <div class="messages-container"></div>
         <form id="msg-form" class="input-container">
-          <input id="text" placeholder="Type a message" />
-          <input type="submit" value="SEND" class="send-button" />
+          <div class="input-form-box">
+            <input
+              id="text"
+              class="input-area"
+              placeholder="Type a message here"
+            />
+
+            <button type="submit" class="send-button">
+              <i class="send__icon fas fa-paper-plane"></i>
+            </button>
+          </div>
         </form>
       </div>
     </section>
