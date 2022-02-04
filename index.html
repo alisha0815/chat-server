@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4d5ebfaa9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <section class="chat__layout">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar__profile">
+          <img src="imgs/girl_avatar.png" alt="profile_avatar_img" />
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item"><i class="fas fa-home"></i></li>
+          <li class="navbar__menu__item"><i class="fas fa-paper-plane"></i></li>
+          <li class="navbar__menu__item">
+            <i class="fas fa-envelope-open"></i>
+          </li>
+          <li class="navbar__menu__item"><i class="fas fa-bell"></i></li>
+          <li class="navbar__menu__item">
+            <i class="fas fa-comment-dots"></i>
+          </li>
+        </ul>
+        <div class="setting__icon"><i class="fas fa-cog"></i></div>
+      </nav>
+      <!-- contact list -->
+      <div class="contact__list">
+        <!-- search bar -->
+        <div class="search__bar">
+          <i class="fa fa-search"></i>
+          <input class="search__area" type="text" placeholder="Search..." />
+        </div>
+        <!-- contact list items -->
+        <div class="contact__list__items">
+          <div class="contact__list__card">
+            <img src="imgs/man_avatar.png" alt="man_avatar" />
+            <p class="name">Donald Greve</p>
+            <span class="timespan">2hr ago</span>
+            <p class="online_status">online</p>
+          </div>
+          <div class="contact__list__card">
+            <img src="imgs/girl_avatar.png" alt="man_avatar" />
+            <p class="name">Alisha Kim</p>
+            <span class="timespan">2hr ago</span>
+            <p class="online_status">online</p>
+          </div>
+        </div>
+      </div>
+      <!-- chat box -->
+      <div class="chat-box_container">
+        <div class="messages-container"></div>
+        <form id="msg-form" class="input-container">
+          <input id="text" placeholder="Type a message" />
+          <input type="submit" value="SEND" class="send-button" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
