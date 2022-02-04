@@ -50,6 +50,10 @@ input {
   border: none;
 }
 
+input:focus {
+  outline: none;
+}
+
 /* layout*/
 .chat__layout {
   display: flex;
@@ -236,4 +240,35 @@ img {
   top: 50px;
   color: var(--color-green);
   font-size: 28px;
+}
+
+/* message container */
+
+/* responsive */
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-basis: 9%;
+  }
+
+  .navbar__profile img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact__list {
+  flex-basis: 30%;
+}
+
+.contact__list__card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* .input-container {
+ 
+} */
+  
 }
