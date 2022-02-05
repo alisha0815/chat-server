@@ -6,6 +6,7 @@ Adding useful CSS features to chat-server
 
 - Make app responsive 
 - Make UX smooth and nice to interact with (e.g. auto-scrolling on new messages).
+- This app was inspired by @Codeworks
 
 
 
